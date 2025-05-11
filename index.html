@@ -9,18 +9,18 @@
     body {
       margin: 0;
       padding: 0;
-      background: #c09d98; /* 設定背景顏色為 #c09d98 */
+      background: #c09d98; /* 背景顏色 */
       font-family: 'Noto Serif TC', serif;
       color: #3c3c3c;
       display: flex;
       justify-content: center;
       align-items: center;
-      min-height: 100vh;
+      min-height: 100vh; /* 保證視窗高度 */
       padding: 2rem;
       overflow: hidden;
     }
     .card {
-      background: #ffffff; /* 設定卡片背景為純白 */
+      background: #ffffff; /* 卡片背景顏色 */
       padding: 3rem;
       border-radius: 16px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -29,6 +29,7 @@
       line-height: 1.8;
       position: relative;
       z-index: 2;
+      overflow: hidden; /* 防止卡片內容被切掉 */
     }
     h1 {
       font-size: 2.5rem;
@@ -56,7 +57,7 @@
       position: absolute;
       width: 6px;
       height: 6px;
-      background: #ffffff; /* 設定光點為發光的純白色 */
+      background: #ffffff; /* 光點顏色 */
       border-radius: 50%;
       opacity: 0.8;
       animation: fall 10s infinite ease-in-out;
