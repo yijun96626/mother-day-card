@@ -6,6 +6,9 @@
   <title>母親節快樂 🌷</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
     body {
       margin: 0;
       padding: 0;
@@ -29,7 +32,8 @@
       line-height: 1.8;
       position: relative;
       z-index: 2;
-      overflow: hidden; /* 防止卡片內容被切掉 */
+      max-height: 95vh; /* 防止卡片過高 */
+      overflow-y: auto; /* 若內容過多，可以滾動 */
     }
     h1 {
       font-size: 2.5rem;
