@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>母親節快樂 🌷</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&family=Zhi+Mang+Xing&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f7f5f2;
+      font-family: 'Noto Serif TC', serif;
+      color: #3c3c3c;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 2rem;
+      overflow: hidden;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 3rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 100%;
+      line-height: 1.8;
+      position: relative;
+      z-index: 2;
+    }
+    h1 {
+      font-family: 'Zhi Mang Xing', cursive;
+      font-size: 2.5rem;
+      color: #a1563d;
+      margin-bottom: 1rem;
+    }
+    .signature {
+      text-align: right;
+      margin-top: 2rem;
+    }
+    .signature span {
+      font-family: 'Zhi Mang Xing', cursive;
+      font-size: 1.5rem;
+    }
+    .particles {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+      overflow: hidden;
+    }
+    .particle {
+      position: absolute;
+      width: 6px;
+      height: 6px;
+      background: #ffd7c2;
+      border-radius: 50%;
+      opacity: 0.6;
+      animation: float 10s infinite ease-in-out;
+    }
+    @keyframes float {
+      0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.6;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+      }
+    }
+    .video-wrapper {
+      position: fixed;
+      bottom: 10px;
+      right: 10px;
+      z-index: 10;
+      opacity: 0.6;
+    }
+    .video-wrapper iframe {
+      width: 200px;
+      height: 113px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="particles">
+    <script>
+      const particlesContainer = document.currentScript.parentElement;
+      for (let i = 0; i < 80; i++) {
+        const p = document.createElement('div');
+        p.classList.add('particle');
+        p.style.left = Math.random() * 100 + '%';
+        p.style.top = Math.random() * 100 + '%';
+        p.style.animationDelay = (Math.random() * 10) + 's';
+        p.style.width = p.style.height = (Math.random() * 4 + 2) + 'px';
+        particlesContainer.appendChild(p);
+      }
+    </script>
+  </div>
+  <div class="card">
+    <h1>母親節快樂，媽媽 🌷</h1>
+    <p>嘿嘿～又到了一年一度的母親節啦！</p>
+    <p>我知道，妳每天都好辛苦，要工作、要顧家，還要照顧我這個有時像小孩、又有點倔強、還動不動就愛哭的女兒。可妳總是默默地、耐心地把一切都撐起來，像世界最溫柔、最堅強的魔法使。</p>
+    <p>這些年，遇見了很多人，也聽了很多故事，才越來越發現：妳真的把我教得很好。雖然我還是有點任性，偶爾也不太聽話，但那份妳放在我心裡的善良和堅定，一直都在。</p>
+    <p>我真的很幸運，可以是妳的女兒。希望時光可以慢一點，讓我們有好多好多個明天可以一起度過。妳要活很久很久喔，這樣我才有足夠的時間，好好愛妳。</p>
+    <p>我愛妳喔，媽媽。</p>
+    <div class="signature">
+      <span>—— 羿君</span>
+    </div>
+  </div>
+  <div class="video-wrapper">
+    <iframe src="https://www.youtube.com/embed/kXLN0bPfq6o?autoplay=1&loop=1&playlist=kXLN0bPfq6o&mute=0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+</body>
+</html>
